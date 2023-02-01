@@ -5,7 +5,7 @@ public class EnhancedForloop {
 	public static void main(String[] args) {
 		String[] strArray= {"Java ","Android ","C","JavaScript","Python"};
 		for (String lang:strArray) {
-			System.out.println(lang); //lang변수에 배열의 각 요소가 대입.
+			System.out.println(lang); //String형 lang변수에 배열의 각 요소가 대입.
 		}
 
 	}
