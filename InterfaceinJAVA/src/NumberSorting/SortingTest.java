@@ -20,11 +20,14 @@ public class SortingTest {
 			System.out.println("지원하지 않는 기능입니다");
 			return;
 		}
-		int[] arr= {6,12,3,2,1,7,8,4,5,10};
+		
+		int[] arr={6,12,3,2,1,7,8,4,5,10};
+		
 		sort.ascending(arr);
+		System.out.print("\r오름차순정렬\r");
 		for(int i:arr)
 			System.out.print(i+" ");
-		System.out.print("\r");
+		System.out.print("\r내림차순정렬\r");
 		sort.descending(arr);
 		for(int i:arr)
 			System.out.print(i+" ");

@@ -2,6 +2,7 @@ package NumberSorting;
 
 public class MergeSort implements Sort {
 	int[] temp=new int[10];
+	
 	@Override
 	public void ascending(int[] arr) {
 		MergesortinAscen(arr,0,arr.length);
@@ -13,7 +14,7 @@ public class MergeSort implements Sort {
 	}
 	@Override
 	public void description() {
-		System.out.println("\r숫자를 정렬하는 Mergesort 알고리즘 입니다.");
+		System.out.println("\r숫자를 정렬하는 Mergesort 알고리즘 입니다.\r시간 복잡도는 O(NlgN)입니다.");
 	}
 	
 	public void MergesortinAscen(int[] arr, int left, int right) { //mergersort 알고리즘(오름차순)  구현

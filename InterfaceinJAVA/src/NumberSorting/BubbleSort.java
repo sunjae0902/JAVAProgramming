@@ -1,12 +1,7 @@
 package NumberSorting;
 
-public class BubbleSort implements Sort {
+public class BubbleSort extends Swap implements Sort  {
 	
-	private void swap(int a, int b,int[] arr) {
-		int t=arr[a];
-		arr[a]=arr[b];
-		arr[b]=t;
-	}
 	
 	@Override
 	public void ascending(int[] arr) {
@@ -27,7 +22,7 @@ public class BubbleSort implements Sort {
 	}
 	@Override
 	public void description() {
-		System.out.println("\r숫자를 정렬하는 Bubblesort 알고리즘 입니다.");
+		System.out.println("\r숫자를 정렬하는 Bubblesort 알고리즘 입니다.\r시간 복잡도는 O(N^2)입니다.");
 	}
 
 }
