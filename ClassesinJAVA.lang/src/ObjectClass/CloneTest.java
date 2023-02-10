@@ -13,7 +13,7 @@ class Point{ //원점 클래스
 	}
 	
 }
-class Circle implements Cloneable{ //하나의 원점과 반지름을 변수로 가지는 원 클래스. 객체를 복제해도 된다는 의미로 마커 인터페이스 cloneable 인터페이스 구현 선언.
+class Circle implements Cloneable{ //하나의 원점과 반지름을 변수로 가지는 원 클래스. 객체를 복제해도 된다는 의미로 마커 인터페이스 cloneable 인터페이스 선언.
 	Point point; 
 	int radius;
 	
