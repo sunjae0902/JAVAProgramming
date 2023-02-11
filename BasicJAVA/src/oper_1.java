@@ -1,4 +1,4 @@
-package ch3;
+package src.ch3;
 
 public class oper_1 {
 //ch3-연산자 
