@@ -1,13 +1,15 @@
 package Collection;
 
-public class Member implements Comparable<Member> {
+import java.util.Comparator;
+
+//정렬을 구현하는데 사용하는 Comparator 인터페이스를 구현하는 Member2클래스
+public class Member2 implements Comparator <Member2>{ 
 	private int memberId;
-	private String memberName; 
+	private String memberName;
 	
-	public Member(int id, String name) {
-		this.memberId=id;
+	public Member2(int memberid, String name) {
+		this.memberId=memberid;
 		this.memberName=name;
-		
 	}
 	
 	public int getId(){
@@ -32,8 +34,8 @@ public class Member implements Comparable<Member> {
 	}
 	@Override
 	public boolean equals(Object obj) { //해당 메서드에서 매개변수로 받은 회원의 아이디가 자신의 아이디와 같으면 true반환 
-		if(obj instanceof Member) {
-			Member member=(Member) obj;
+		if(obj instanceof Member2) {
+			Member2 member=(Member2) obj;
 			if(this.memberId==member.memberId)
 				return true;
 			else return false;
@@ -42,8 +44,9 @@ public class Member implements Comparable<Member> {
 	}
 	
 	@Override
-	public int compareTo(Member member) {
-		return this.memberName.compareTo(member.memberName); //오름차순으로 정렬할 수 있는 비교함수 재정의. STRING클래스에 해당 함수가 재정의 되어 있으므로 활용함 (새로 추가된 이름, 매개변수로 전달된 회원이름. 
+	public int compare(Member2 m1, Member2 m2) {
+		return m1.getId()-m2.getId(); //compare함수 재정의. 전달 받은 두 매개변수 회원의 아이디를 비교함 
 	}
 	
-	}
+
+}
