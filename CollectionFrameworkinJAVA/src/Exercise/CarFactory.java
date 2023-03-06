@@ -6,7 +6,7 @@ public class CarFactory {
 	
 	private static CarFactory instance =new CarFactory(); //초기화 이후 인스턴스 생성.  
 	HashMap <String,Car> hashmap=new HashMap<>(); //키: String(name) 값: Car. -> key는 중복이 안되므로 각 연수차들과 승연차들은 하나로 쳐짐. 
-	
+
 	
 	private CarFactory() {} //디폴트 생성자. 초기화 이후 해당 클래스 내에서만 사용하므로 private으로 선언. 
 	public static CarFactory getInstance() { 
